@@ -52,25 +52,48 @@ command or action was applied.
 
 Currently, _CAOIMHEBot_ maintains the following flags on users:
 
-+----------+-----------------------------------------------+------------------+
-| Flag     | Description                                   | Default handling |
-+----------+-----------------------------------------------+------------------+
-| under-18 | Indicates that the user is underage and       | Kick, ban, and   |
-|          | should not be present in channels which       | notify admins    |
-|          | discuss adult content and legally require a   |                  |
-|          | minimum age of 18 to join.                    |                  |
-+----------+-----------------------------------------------+------------------+
-| cp       | Indicates that the user has posted links to   | Kick, ban, and   |
-|          | or sought out groups or content relating to   | notify admins    |
-|          | child pornography or other matters. This is a |                  |
-|          | **very** severe flag and must not be added to | The handling for |
-|          | a user without being sure that it is correct. | this flag can    |
-|          | Incorrectly flagging a user with this flag    | **NOT** be       |
-|          | will result in the admin who added the flag   | disabled for any |
-|          | being deauthorised from accessing the bot,    | groups of which  |
-|          | and possibly also reported to Telegram.       | _CAOIMHEBot_ is  |
-|          |                                               | a member.        |
-+----------+-----------------------------------------------+------------------+
+<table>
+    <thead>
+        <tr>
+            <th>Flag</th>
+            <th>Description</th>
+            <th>Default handling</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>`under-18`</td>
+            <td>
+                Indicates that the user is underage and should not be present
+                in channels which discuss adult content and legally require a
+                minimum age of 18 to join.
+            </td>
+            <td>
+                Kick, ban, and notify admins
+            </td>
+        </tr>
+        <tr>
+            <td>`cp`</td>
+            <td>
+                Indicates that the user has posted links to or sought out
+                groups or content relating to child pornography or other
+                matters.<br/>
+                <br/>
+                This is a **very** severe flag and must not be added to a user
+                without being sure that it is correct. Incorrectly flagging a
+                user with this flag will result in the admin who added the flag
+                being deauthorised from accessing the bot, and possibly also
+                reported to Telegram.
+            </td>
+            <td>
+                Kick, ban, and notify admins<br/>
+                <br/>
+                This flag can **NOT** be disabled for any channels in which
+                _CAOIMHEBot_ is active.
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 Flags may be added, modified, or removed, if it becomes necessary to do so.
 
