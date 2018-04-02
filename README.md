@@ -107,7 +107,7 @@ If you:
 
 * have any questions about the operation of CAOIMHEBot;
 * wish to be authorised for the bot to join your channel; or
-* have had a flag wrongly added to your account and wish to appeal it
+* have had a flag wrongly added to your account and wish to appeal it;
 
 please join https://t.me/joinchat/AsxJrE4OglxKnpC8l8zooQ and an admin will help you as soon as possible. This is a non-public channel with message history disabled, so new users will not be able to view old messages, however please do remember that any messages you do send to the channel will be visible to all members currently in the channel.
 
