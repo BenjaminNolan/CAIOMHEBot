@@ -62,7 +62,9 @@ Currently, _CAOIMHEBot_ maintains the following flags on users:
     </thead>
     <tbody>
         <tr>
-            <td>`under-18`</td>
+            <td>
+                <code>under-18</code>
+            </td>
             <td>
                 Indicates that the user is underage and should not be present
                 in channels which discuss adult content and legally require a
@@ -73,23 +75,25 @@ Currently, _CAOIMHEBot_ maintains the following flags on users:
             </td>
         </tr>
         <tr>
-            <td>`cp`</td>
+            <td>
+                <code>cp</code>
+            </td>
             <td>
                 Indicates that the user has posted links to or sought out
                 groups or content relating to child pornography or other
                 matters.<br/>
                 <br/>
-                This is a **very** severe flag and must not be added to a user
-                without being sure that it is correct. Incorrectly flagging a
-                user with this flag will result in the admin who added the flag
-                being deauthorised from accessing the bot, and possibly also
-                reported to Telegram.
+                This is a <strong>very</strong> severe flag and must not be
+                added to a user without being sure that it is correct.
+                Incorrectly flagging a user with this flag will result in
+                the admin who added the flag being deauthorised from
+                accessing the bot, and possibly also reported to Telegram.
             </td>
             <td>
                 Kick, ban, and notify admins<br/>
                 <br/>
-                This flag can **NOT** be disabled for any channels in which
-                _CAOIMHEBot_ is active.
+                This flag can <strong>NOT</strong> be disabled for any
+                channels in which <em>CAOIMHEBot</em> is active.
             </td>
         </tr>
     </tbody>
