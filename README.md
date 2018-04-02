@@ -1,4 +1,4 @@
-## _CAOIMHEBot_
+## What is _CAOIMHEBot_?
 
 _CAOIMHEBot_ is a community response to the growing difficulties of managing
 groups relating to adult content on Telegram.
