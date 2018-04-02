@@ -1,37 +1,89 @@
-## Welcome to GitHub Pages
+## _CAOIMHEBot_
 
-You can use the [editor on GitHub](https://github.com/BenjaminNolan/CAIOMHEBot/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+_CAOIMHEBot_ is a community response to the growing difficulties of managing
+groups relating to adult content on Telegram.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+It is primarily intended to help admins of Telegram groups for users aged 18
+or over to protect the users of their groups from users under 18 joining those
+groups—however well-intentioned they may be—and to protect those users under
+18 from people who would seek to exploit or harm them.
 
-### Markdown
+### 'Caoimhe'?
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+_CAOIMHE_ is pronounced "KEE-vuh", is a respected Irish name meaning 'one who
+is dear and noble', and stands for Centralised Automated On-line Interlinked
+Multi-channel Holistics Endeavour.
 
-```markdown
-Syntax highlighted code block
+What does that mean? It means we really wanted the name to spell out
+_CAOIMHE_. :)
 
-# Header 1
-## Header 2
-### Header 3
+### How does it work?
 
-- Bulleted
-- List
+Admins of groups may request that _CAOIMHEBot_ join their group as a member,
+and the bot will connect to the group and, for the most part, sit quietly in
+the corner and happily ignore almost everything which goes through the groups
+to which it has been added.
 
-1. Numbered
-2. List
+Nothing is logged, except for commands sent by authorised group admins and
+events which _CAOIMHEBot_ itself has triggered, such as kicking or banning a
+user or sending a message to a channel or user, or when specific criteria are
+met, which are covered below.
 
-**Bold** and _Italic_ and `Code` text
+Authorised admins of groups to which _CAOIMHEBot_ has been added can add flags
+to users, and they can select how those flags are handled in their groups.
+Users can not view their own flags, and user flags can only be viewed by the
+admin who added the flag and the _CAOIMHEBot_ Management Committee.
 
-[Link](url) and ![Image](src)
-```
+When a flag is added to a user, _CAOIMHEBot_ will look for that user in groups
+of which it is a member. If it finds that user in one of these groups, it will
+check how the particular flag which has been added should be handled for that
+group and, if required, execute the necessary actions.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+When _CAOIMHEBot_ executes an action on a user, it logs an entry in its
+database that the action has been executed. When a flag is removed from a user,
+the logs for that flag for that user are deleted and are unrecoverable.
+Similarly, if a user account is deleted, _CAOIMHEBot_ will delete its records
+associated with that account. Only stub entries will remain to indicate that
+a group admin called a command or that _CAOIMHEBot_ performed an action without
+indicating the content or target of that command, such as the user to which the
+command or action was applied.
 
-### Jekyll Themes
+### What flags does _CAOIMEBot_ maintain?
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/BenjaminNolan/CAIOMHEBot/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Currently, _CAOIMHEBot_ maintains the following flags on users:
+
++----------+-----------------------------------------------+------------------+
+| Flag     | Description                                   | Default handling |
++----------+-----------------------------------------------+------------------+
+| under-18 | Indicates that the user is underage and       | Kick, ban, and   |
+|          | should not be present in channels which       | notify admins    |
+|          | discuss adult content and legally require a   |                  |
+|          | minimum age of 18 to join.                    |                  |
++----------+-----------------------------------------------+------------------+
+| cp       | Indicates that the user has posted links to   | Kick, ban, and   |
+|          | or sought out groups or content relating to   | notify admins    |
+|          | child pornography or other matters. This is a |                  |
+|          | **very** severe flag and must not be added to | The handling for |
+|          | a user without being sure that it is correct. | this flag can    |
+|          | Incorrectly flagging a user with this flag    | **NOT** be       |
+|          | will result in the admin who added the flag   | disabled for any |
+|          | being deauthorised from accessing the bot,    | groups of which  |
+|          | and possibly also reported to Telegram.       | _CAOIMHEBot_ is  |
+|          |                                               | a member.        |
++----------+-----------------------------------------------+------------------+
+
+Flags may be added, modified, or removed, if it becomes necessary to do so.
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+If you:
+
+* have any questions about the operation of CAOIMHEBot;
+* wish to be authorised for the bot to join your channel; or
+* have had a flag wrongly added to your account and wish to appeal it
+
+please join https://t.me/joinchat/AsxJrE4OglxKnpC8l8zooQ and an admin will help you as soon as possible. This is a non-public channel with message history disabled, so new users will not be able to view old messages, however please do remember that any messages you do send to the channel will be visible to all members currently in the channel.
+
+If you want to discuss your issue privately, please join the channel and say that you have a private matter which you wish to discuss regarding the bot, and a group admin will message you as soon as they are able.
+
+Please **make sure that the user** who contacts you **is actually one of the group's admins**, as users may attempt to impersonate a group admin in order to find out what your query is. If this happens, please say so in the main group and we will aim to resolve the issue as quickly as possible.
